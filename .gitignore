@@ -1,6 +1,3 @@
 # Ignorer la template
 template.html
 
-# Ignorer les feuilles de style inutiles
-dark.css
-darkmode.css
