@@ -9,25 +9,17 @@
     --base-variant: #c6c6c6;
     --text-color: black;
 	--link-color: blue;
+    --link-color-visited: darkblue;
 }
-
-body {
-    background-color: var(--base-color);
-    color: var(--text-color);
-    text-align: center;
-    font-family: "Ubuntu", sans-serif;
-}
-
-header #theme-switch{
-    background-color: var(--base-variant);
-}
-
 .darkMode {
     --base-color: #222222;
     --base-variant: #555;
     --text-color: gainsboro;
     --link-color: red;
+    --link-color-visited: crimson;
 }
+
+/* Version normale des éléments */
 
 #theme-switch {
     height: 50px;
@@ -55,12 +47,61 @@ header #theme-switch{
     display: block;
 }
 
-#logo {
-    height: 50px;
-    width: 50px;
+
+
+body {
+    background-color: var(--base-color);
+    color: var(--text-color);
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
 }
 
-img {
-    max-width: 75%;
-    height: auto;
+header #theme-switch{
+    background-color: var(--base-variant);
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:visited {
+    color: var(--link-color-visited)
+}
+
+.specify {
+    color: var(--text-color);
+}
+
+.specify:hover {
+    text-decoration: none;
+}
+
+#video {
+    margin-bottom: 8px;
+}
+
+.fa-discord {
+    color: gray;
+    opacity: .5;
+}
+
+.fa-youtube {
+    color: #FF0000;
+}
+
+.fa-brands {
+    font-size: x-large;
+    margin-top: .3em;
+}
+
+.fa-youtube.darkMode {
+    color: var(--text-color);
+}
+
+.fa-github {
+    color: var(--text-color);
 }
