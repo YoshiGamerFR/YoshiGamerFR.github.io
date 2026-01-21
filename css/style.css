@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/* CSS */
+    /* CSS */
 
 :root{
     --base-color: white;
@@ -19,7 +19,7 @@
     --link-color-visited: crimson;
 }
 
-/* Version normale des éléments */
+/* Lightmode version of elements */
 
 #theme-switch {
     height: 50px;
@@ -47,8 +47,6 @@
     display: block;
 }
 
-
-
 body {
     background-color: var(--base-color);
     color: var(--text-color);
@@ -59,6 +57,8 @@ body {
 header #theme-switch{
     background-color: var(--base-variant);
 }
+
+/* Custom CSS */
 
 .strikethrough {
     text-decoration: line-through;
@@ -72,25 +72,44 @@ a:visited {
     color: var(--link-color-visited)
 }
 
-.specify {
+a.specify.secret {
+    text-decoration: none;
     color: var(--text-color);
 }
 
-.specify:hover {
-    text-decoration: none;
+a.specify.secret:hover {
+    font-style: italic;
 }
 
 #video {
-    margin-bottom: 8px;
+    font-size: small;
 }
 
-.fa-discord {
+footer {
+    font-size: x-small;
+}
+
+#secret {
+    font-size: xx-small;
+}
+
+/* Icons settings */
+
+.fa-discord.unavailable {
     color: gray;
     opacity: .5;
 }
 
+.fa-discord {
+    color: #5865F2;
+}
+
 .fa-youtube {
     color: #FF0000;
+}
+
+.fa-github {
+    color: var(--text-color);
 }
 
 .fa-brands {
@@ -98,10 +117,12 @@ a:visited {
     margin-top: .3em;
 }
 
-.fa-youtube.darkMode {
+/* Darkmode version */
+
+.fa-discord.darkMode {
     color: var(--text-color);
 }
 
-.fa-github {
+.fa-youtube.darkMode {
     color: var(--text-color);
 }
